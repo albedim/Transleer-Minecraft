@@ -1,0 +1,15 @@
+name: Transleer
+version: '1.0-SNAPSHOT'
+main: me.albedim.transleer.Transleer
+api-version: '1.18'
+commands:
+  messages:
+    aliases:
+      - msgs:
+        description: Show all messages
+        usage: /msgs
+  translate:
+    aliases:
+      - tr:
+          description: Translate a message
+          usage: /tr <username:messageIndex> <language>
