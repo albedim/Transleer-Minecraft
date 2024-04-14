@@ -11,5 +11,5 @@ commands:
   translate:
     aliases:
       - tr:
-          description: Translate a message
-          usage: /tr <username:messageIndex> <language>
+        description: Translate a message
+        usage: /tr <username:messageIndex> <language>

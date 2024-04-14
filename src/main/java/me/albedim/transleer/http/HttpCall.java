@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 import me.albedim.transleer.classes.TransleerRequest;
 
 public class HttpCall {
+
     public static String translateMessage(String message, String language) {
         JsonObject res = HttpUtils.post(
                 "/translate",
@@ -11,7 +12,7 @@ public class HttpCall {
                 new TransleerRequest(message, language),
                 JsonObject.class
         ).getAsJsonObject();
-        String response;
+        
         if (res.get("code").getAsInt() == 200) {
             return "§7[§aTransleer§7] (" + language + ") §8➜ §7§o" + res.get("res").getAsString();
         }

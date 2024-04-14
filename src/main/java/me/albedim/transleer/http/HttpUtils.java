@@ -8,7 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HttpUtils {
-    private static final String baseUrl = "http://localhost:5000";
+    private static final String baseUrl = "https://albedim.pythonanywhere.com";
     private static final Gson gson = new Gson();
 
     public static <T> T get(String endpoint, String token, Class<T> responseType){

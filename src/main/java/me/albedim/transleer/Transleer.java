@@ -29,6 +29,7 @@ public final class Transleer extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+        System.out.println("[Transleer] - disabled");
     }
 
     public static Transleer getPlugin() {

@@ -1,0 +1,3 @@
+translate_perm: transleer.translate
+admin_perm: transleer.admin
+max_messages_savable: 50
